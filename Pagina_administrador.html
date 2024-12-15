@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0; 
+        }
+        body {
+            background-image: url('Fondo.avif');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: #fff; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 20px; 
+            max-width: 200px; 
+            max-height: 200px; 
+            width: auto; 
+            height: auto; 
+            cursor: pointer; /* Cambia el cursor para que indique que es clickeable */
+        }
+        button {
+            margin: 10px; 
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border: none; 
+            border-radius: 5px;
+            color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    <a href="Pagina_principal.html">
+        <img src="Logo.jpeg" alt="Logo" class="logo" />
+    </a>
+    <h1>Bienvenido al Administrador</h1>
+    <button onclick="window.location.href='Mantenimiento_Tablas.php'">Mantenimiento</button>
+    <button onclick="window.location.href='listado_comunas_ingresar_partido.php'">Ingresar partido</button>
+    <button onclick="window.location.href='Opcion_de_gestion.html'">Gestión de ligas</button>
+<button onclick="window.location.href='generar_admin.php'">Generar administrador</button>
+</body>
+</html>
+

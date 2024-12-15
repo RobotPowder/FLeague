@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        html, body {
+            height: 100%; /* Asegura que el body y html ocupen toda la altura del viewport */
+            margin: 0; /* Elimina el margen por defecto */
+        }
+        body {
+            background-image: url('Fondo.avif');
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            color: #fff; /* Color del texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center; /* Centra el texto en los formularios */
+        }
+        .logo {
+            margin-bottom: 20px; /* Espacio debajo del logo */
+            max-width: 200px; /* Ajusta el tamaño máximo del logo */
+            max-height: 200px; /* Ajusta la altura máxima del logo */
+            width: auto; /* Mantiene la proporción del logo */
+            height: auto; /* Mantiene la proporción del logo */
+        }
+        form {
+            margin: 10px 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los formularios */
+            border-radius: 5px; /* Bordes redondeados */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="Logo.jpeg" alt="Logo" class="logo" />
+    <h2>Inicio de Sesión</h2>
+    <form action="control_de_acceso.php" method="post"> <!-- Apunta al archivo PHP de autenticación -->
+        <label for="username">Nombre de Usuario:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Contraseña:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+</body>
+</html>
+

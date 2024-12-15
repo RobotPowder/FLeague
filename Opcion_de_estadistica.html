@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Tabla</title>
+    <style>
+        html, body {
+            height: 100%; 
+            margin: 0; 
+        }
+        body {
+            background-image: url('Fondo.avif');
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            color: #fff; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 20px; 
+            max-width: 200px; 
+            max-height: 200px; 
+            width: auto; 
+            height: auto; 
+        }
+        h1 {
+            margin-bottom: 40px;
+        }
+        button {
+            margin: 10px; 
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border: none; 
+            border-radius: 5px;
+            color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Seleccione una Opción</h1>
+    <button onclick="window.location.href='listado_comunas.php'">Tabla de Posiciones</button>
+    <button onclick="window.location.href='listado_comunas_goleadores.php'">Tabla de Goleadores</button>
+</body>
+</html>
+

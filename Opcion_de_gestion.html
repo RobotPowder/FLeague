@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Opciones</title>
+    <style>
+        html, body {
+            height: 100%; /* Asegura que el body y html ocupen toda la altura del viewport */
+            margin: 0; /* Elimina el margen por defecto */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('Fondo.avif'); /* Fondo de la página */
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            color: #fff; /* Color del texto */
+        }
+        .button-container {
+            margin: 20px;
+        }
+        .button {
+            padding: 15px 25px;
+            font-size: 18px;
+            color: #fff;
+            background-color: rgba(0, 123, 255, 0.7); /* Fondo azul semi-transparente */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s; /* Transición suave para el cambio de color */
+        }
+        .button:hover {
+            background-color: rgba(0, 86, 179, 0.7); /* Fondo azul más oscuro al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <h1>Elige una opción</h1>
+    <div class="button-container">
+        <a href="listado_comunas_modificar_liga.php" class="button">Gestionar Equipos</a>
+    </div>
+    <div class="button-container">
+        <a href="listado_comunas_modificar_liga2.php" class="button">Gestionar Liga</a>
+    </div>
+</body>
+</html>
+
